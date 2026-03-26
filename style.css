@@ -104,6 +104,7 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   overflow-x: hidden;
 }
 
 body {
@@ -1118,6 +1119,7 @@ ul {
   position: relative;
   overflow: hidden;
   padding: var(--space-6) 0;
+   max-width: 100vw;
 }
 
 .clients__track-wrapper::before,
@@ -1214,7 +1216,7 @@ ul {
   top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 700px;
+  width: min(700px, 100vw);
   height: 350px;
   background: radial-gradient(ellipse, rgba(20, 86, 177, 0.25) 0%, transparent 70%);
   pointer-events: none;
