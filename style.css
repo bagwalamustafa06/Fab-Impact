@@ -1672,6 +1672,7 @@ ul {
   bottom: var(--space-6);
   right: var(--space-6);
   z-index: 998;
+  will-change: bottom;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -1696,14 +1697,11 @@ ul {
 }
 
 @keyframes floatBtn {
-
-  0%,
-  100% {
-    transform: translateY(0);
+  0%, 100% {
+    bottom: var(--space-6);
   }
-
   50% {
-    transform: translateY(-6px);
+    bottom: calc(var(--space-6) + 6px);
   }
 }
 
